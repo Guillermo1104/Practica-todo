@@ -5,7 +5,6 @@ import { Input } from './Input'
 
 export const AddTodo = () => {
   const [input, setInput] = useState<string>('')
-  const [todos, setTodos] = useState<string[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
   const { addTodo } = useTodo()
 
@@ -44,7 +43,7 @@ export const AddTodo = () => {
          />
          <button
          type='submit'
-         className='px-5 py-2 text-sm font.normal text-blue-300 bg-blue-900 border-2 border-blue-900 active:scale-95 rounded-xl'
+         className='px-5 py-2 text-sm font-normal text-blue-300 bg-blue-900 border-2 border-blue-900 active:scale-95 rounded-xl'
          >
           Submit
 
